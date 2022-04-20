@@ -26,4 +26,6 @@ npm run lint
 
 ### Customize configuration
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# so-vue-simple-calendar 12
