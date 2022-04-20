@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-Test vue.js code
+
 =======
 ## Project setup
 
