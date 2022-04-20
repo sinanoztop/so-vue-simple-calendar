@@ -1,5 +1,3 @@
-Test
-
 ## Project setup
 
 ```
