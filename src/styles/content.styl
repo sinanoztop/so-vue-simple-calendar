@@ -1,0 +1,84 @@
+.home
+    height 100vh
+    display flex
+    flex-direction column
+
+    .filter-t
+        display grid
+        grid-template-columns 1fr 1fr
+        grid-gap 20px
+        background #fff
+        border-bottom solid 1px #ddd
+        
+        > div
+            relative left top
+
+            &:first-child
+                border-right solid 1px #ddd
+
+            span
+                display flex
+                align-items center
+                justify-content space-between
+                padding 20px
+                font-size 16px
+                font-weight bold
+            
+            select
+                absolute left top
+                size(100%)
+                opacity(0)
+                cursor pointer
+
+    .date-list
+        height 100vh
+        flex 1
+        display flex
+        flex-wrap wrap
+        background #fff
+
+        > span
+            flex 0 0 20%
+            padding 25px
+            font-size 14px
+            font-weight 500
+            border-bottom solid 1px #ddd
+            border-right solid 1px #ddd
+
+            &:nth-child(even)
+                background #f2f2f2
+
+            .icon
+                display block
+                margin-bottom 14px
+                font-size 20px
+
+
+    .day-modal
+        absolute left top
+        size(100%)
+        app_flex()
+        z-index 2
+        background rgba(0,0,0,0.7)
+
+        .c
+            width 100%
+            max-width 500px
+            background #fff
+            padding 14px
+            border-radius(4px)
+
+            .t
+                display grid
+                grid-template-columns auto auto
+                justify-content space-between
+
+                span
+                    &:first-child
+                        font-size 14px
+                        font-weight 600
+
+                    &:last-child
+                        color red
+                        font-size 14px
+                        font-weight 600
