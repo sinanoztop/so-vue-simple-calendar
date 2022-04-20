@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <filterT />
     <dayList v-on:selectDate="selectDate" />
     <dayModal
       v-if="dayModal"
@@ -11,6 +12,8 @@
 
 <script>
 import "@/styles/base.styl";
+import { mapState, mapActions } from "vuex";
+import filterT from "@/components/filterT";
 import dayList from "@/components/dayList";
 import dayModal from "@/components/dayModal";
 export default {
@@ -18,6 +21,7 @@ export default {
   components: {
     dayList,
     dayModal,
+    filterT,
   },
   data() {
     return {
@@ -26,6 +30,7 @@ export default {
     };
   },
   methods: {
+    ...mapActions(["setMonthYear"]),
     closeModal() {
       this.selectedDate = "";
       this.dayModal = false;
@@ -35,5 +40,6 @@ export default {
       this.dayModal = true;
     },
   },
+  mounted() {},
 };
 </script>
