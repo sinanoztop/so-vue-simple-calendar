@@ -7,6 +7,7 @@
       v-bind:day="selectedDate"
       v-on:closeModal="closeModal"
     />
+    <p>Test section</p>
   </div>
 </template>
 
